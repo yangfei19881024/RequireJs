@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title></title>
+    <link rel="stylesheet" href="./style/style.css">
+    <style>
+      .box{
+        border:1px solid red;
+      }
+      .son{
+        padding-bottom: 100%;
+        position: relative;
+        overflow: hidden;
+      }
+
+      li{
+        float:left;
+        width: 50%;
+        padding:10px;
+        text-align: center;
+        overflow: hidden;
+      }
+      li img{
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+
+      li img.loading{
+        padding-bottom: 100%;
+        background: url(http://static-up.xidibuy.com/m/static/global/images/1.0.0/loadingx.gif) 50% 50% / 32px 32px no-repeat;
+      }
+      *{
+        box-sizing: border-box;
+      }
+    </style>
+</head>
+<body>
+
+
+    <h1>Hello world!</h1>
+
+    <ul>
+      <li>
+        <div class="box">
+          <div class="son">
+            <img class="loading" data-src="http://image.xidibuy.com/shop/shop.5a081c4c1d0bbdcd9a00569fa43f1adeba347e68b7a507d73500842dd515aa3d.jpeg/280"/>
+
+          </div>
+          <p>yangfei</p>
+        </div>
+      </li>
+      <li>
+        <div class="box">
+          <div class="son">
+            <img data-src="http://image.xidibuy.com/shop/shop.5a081c4c1d0bbdcd9a00569fa43f1adeba347e68b7a507d73500842dd515aa3d.jpeg/280"/>
+
+          </div>
+          <p>yangfei</p>
+        </div>
+      </li>
+      <li>
+        <div class="box">
+          <div class="son">
+            <img class="loading" src="http://image.xidibuy.com/shop/shop.5a081c4c1d0bbdcd9a00569fa43f1adeba347e68b7a507d73500842dd515aa3d.jpeg/280"/>
+
+          </div>
+          <p>yangfei</p>
+        </div>
+      </li>
+      <li>
+        <div class="box">
+          <div class="son">
+            <img data-src="http://image.xidibuy.com/shop/shop.5a081c4c1d0bbdcd9a00569fa43f1adeba347e68b7a507d73500842dd515aa3d.jpeg/280"/>
+
+          </div>
+          <p>yangfei</p>
+        </div>
+      </li>
+    </ul>
+
+    <!--swipe 插件使用-->
+    <div id='slider' class='swipe'>
+      <div class='swipe-wrap'>
+        <div>
+          <img src="http://m.360buyimg.com/mobilecms/s720x350_jfs/t2080/322/1091315710/81654/93a4645d/56457bb8Nb24b146c.jpg" alt="">
+        </div>
+        <div>
+          <img src="http://m.360buyimg.com/mobilecms/s720x350_jfs/t2407/349/1231635951/194810/5485641e/564580b5N664fa289.jpg" alt="">
+        </div>
+        <div>
+          <img src="http://m.360buyimg.com/mobilecms/s720x350_jfs/t2173/130/1069225438/98339/f7ac520e/56457ac2N8b8c5504.jpg" alt="">
+        </div>
+      </div>
+    </div>
+
+    <!--=====================正常开发==================-->
+
+    <script data-main="script/main"
+            src="./src/bower_components/requirejs/require.js"></script>
+
+    <!--=====================项目上线操作[!!压缩合并混淆代码!!]==================-->
+
+    <!----第一张方式合并所有代码----->
+    <!--<script data-main="script/script-min"
+            src="./src/bower_components/requirejs/require.js"></script>-->
+
+    <!----第二种合并压缩混淆代码--->
+    <!--<script data-main="script/concatenated-uglified-modules"
+        src="./src/bower_components/requirejs/require.js"></script>-->
+
+    <!--第三种 合并压缩混淆 去掉注释-->
+    <!--<script data-main="script/concatenated-uglified-noLicenseComments-modules"
+            src="./src/bower_components/requirejs/require.js"></script>-->
+
+    <!-- 第四种 终极杀手锏 压缩合并所有代码-->
+    <!-- <script src="script/script.min.js"></script> -->
+</body>
+</html>
